@@ -2,7 +2,7 @@
   {
     "id": "M01",
     "study": "mannich",
-    "prompt": "Каков состав набора асимметричных органокаталитических реакций Манниха из Scientific Data 2026? Пересчитай реакции, публикации, катализаторы и реагенты, сохранив аксиальную стереохимию и объяснив дедупликацию.",
+    "prompt": "What is the composition of the asymmetric organocatalytic Mannich dataset in Scientific Data 2026? Recompute reaction, publication, catalyst and reagent counts, preserving axial stereochemistry and explaining deduplication.",
     "expected_tools": [
       "mannich_dataset_overview"
     ],
@@ -15,7 +15,7 @@
   {
     "id": "M02",
     "study": "mannich",
-    "prompt": "Зачем авторы набора реакций Манниха преобразовали ee в |ΔΔG‡|? Независимо пересчитай значения по ee и температуре, сравни с сохранённой колонкой, покажи распределения и асимметрию. Объясни предел ee=100% и отличие от dr.",
+    "prompt": "Why convert Mannich ee to |ΔΔG‡|? Independently recompute values from ee and temperature, compare the stored column, and show distributions and skewness. Explain the ee=100% limit and the distinction from dr.",
     "expected_tools": [
       "mannich_enantioselectivity_distribution"
     ],
@@ -28,7 +28,7 @@
   {
     "id": "M03",
     "study": "mannich",
-    "prompt": "Какие температуры, растворители, времена, выходы и загрузки катализатора представлены в наборе Манниха? Воспроизведи распределения и проверь, совпадает ли число растворителей со статьёй; смеси и синонимы обработай явно.",
+    "prompt": "Which temperatures, solvents, times, yields and catalyst loadings occur in the Mannich dataset? Reproduce the distributions and compare solvent counts with the paper, handling mixtures and synonyms explicitly.",
     "expected_tools": [
       "mannich_reaction_conditions"
     ],
@@ -42,7 +42,7 @@
   {
     "id": "M04",
     "study": "mannich",
-    "prompt": "Какие классы катализаторов и реагентов доминируют в наборе Манниха? Пересчитай SMARTS-классификацию, проверь сохранённые метки и покажи самый частый катализатор каждого класса со структурой и частотой.",
+    "prompt": "Which catalyst and reagent classes dominate the Mannich dataset? Recompute SMARTS classification, audit stored labels, and show the most frequent catalyst in each class with its structure and frequency.",
     "expected_tools": [
       "mannich_component_classification"
     ],
@@ -55,7 +55,7 @@
   {
     "id": "M05",
     "study": "mannich",
-    "prompt": "Воспроизведи карты химического пространства катализаторов и реагентов Манниха. Сохрани принадлежность каждой точки исходной структуре; отдельно проверь, как кодируется стереохимия и соответствует ли это тексту статьи.",
+    "prompt": "Reproduce chemical-space maps for Mannich catalysts and reagents. Retain the source identity of every point and check how stereochemistry is encoded relative to the paper.",
     "expected_tools": [
       "mannich_chemical_space"
     ],
@@ -68,7 +68,7 @@
   {
     "id": "M06",
     "study": "mannich",
-    "prompt": "Насколько разнообразны каркасы катализаторов, электрофилов и нуклеофилов в наборе Манниха? Воспроизведи дополнение с частотами, отдельно покажи ациклические исключения и расхождения с опубликованными числами.",
+    "prompt": "How diverse are Mannich catalyst, electrophile and nucleophile scaffolds? Reproduce the supplementary scaffold populations and frequencies, reporting acyclic exclusions and disagreements with published counts separately.",
     "expected_tools": [
       "mannich_scaffold_diversity"
     ],
@@ -81,7 +81,7 @@
   {
     "id": "M07",
     "study": "mannich",
-    "prompt": "Какие сочетания классов катализатора и субстрата дают высокий медианный ee в опубликованных реакциях Манниха? Построй обе тепловые карты с числом наблюдений и сравни правила маскирования статьи и ноутбука. Можно ли по ним выбрать лучший катализатор для нового субстрата?",
+    "prompt": "Which Mannich catalyst–substrate classes have high median ee? Produce both heatmaps with observation counts and compare the paper and notebook masking rules. Can these observations identify the best catalyst for a new substrate?",
     "expected_tools": [
       "mannich_selectivity_heatmaps"
     ],
@@ -94,7 +94,7 @@
   {
     "id": "M08",
     "study": "mannich",
-    "prompt": "Проверь трёхмерные структуры всех катализаторов Манниха против табличных SMILES, точечной и аксиальной стереохимии. Раздели ошибку графа, дополнительную неуказанную стереохимию и неподтверждённое абсолютное R/S. Затем воспроизведи генерацию структур без OCR.",
+    "prompt": "Audit all Mannich catalyst 3-D structures against tabulated SMILES and point/axial stereochemistry. Distinguish graph errors, additional unspecified stereochemistry and unverified absolute R/S. Then reproduce structure generation without OCR.",
     "expected_tools": [
       "mannich_catalyst_structure_audit",
       "mannich_regenerate_catalyst_structures"
@@ -109,7 +109,7 @@
   {
     "id": "M09",
     "study": "mannich",
-    "prompt": "Воспроизведи PCA пространства всех реакций Манниха из дополнения. Сохрани роли реагентов, катализатора и продукта, покажи настройки структурного reaction fingerprint, доли дисперсии и координаты. Не подменяй неизвестные настройки авторов молчаливыми значениями по умолчанию.",
+    "prompt": "Reconstruct the supplementary PCA of all Mannich reactions. Preserve reagent, catalyst and product roles, and return structural reaction-fingerprint settings, explained variance and coordinates. Disclose missing original settings instead of silently substituting defaults.",
     "expected_tools": [
       "mannich_reaction_space"
     ],
