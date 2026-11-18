@@ -1,0 +1,36 @@
+{
+  "study": "mannich",
+  "paper_doi": "10.1038/s41597-026-08287-9",
+  "dataset_scope": "mannich_2026",
+  "registry_name": "mannich-2026",
+  "description": "Manually curated asymmetric Mannich data descriptor: fixed4015 reaction records; dataset/row audit, ee-to-ddG, reaction conditions, ordered SMARTS classes, scaffolds, t-SNE and heatmaps. Separate SDF audit/regeneration and declared reaction-PCA reconstruction. Preserve axial identity and source discrepancies. No reaction OCR.",
+  "transport": "streamable-http",
+  "mcp_path": "/mcp",
+  "artifact_path": "/files/{sha256}.{extension}",
+  "default_port": 7343,
+  "tool_count": 10,
+  "tool_names": [
+    "mannich_catalyst_structure_audit",
+    "mannich_chemical_space",
+    "mannich_component_classification",
+    "mannich_dataset_overview",
+    "mannich_enantioselectivity_distribution",
+    "mannich_reaction_conditions",
+    "mannich_reaction_space",
+    "mannich_regenerate_catalyst_structures",
+    "mannich_scaffold_diversity",
+    "mannich_selectivity_heatmaps"
+  ],
+  "smoke_tool": "mannich_dataset_overview",
+  "core_repository": "https://github.com/chemagents/chem-repro-suite",
+  "core_commit": "a2d980330bd90275722d401c6c9ca246a536dd01",
+  "deployment": {
+    "shared_endpoint": null,
+    "status": "not_deployed",
+    "endpoint_supplied_by": "CoScientist deployment operator"
+  },
+  "compatibility_checked_against": "aimclub/CoScientist_dev@900aeae29d77416a798bdf706bc1c6df8d8e1911",
+  "smoke_metrics": {
+    "reaction_records": 4015
+  }
+}

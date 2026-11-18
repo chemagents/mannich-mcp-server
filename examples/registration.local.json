@@ -1,0 +1,7 @@
+[
+  {
+    "name": "mannich-2026",
+    "url": "http://127.0.0.1:7343/mcp",
+    "description": "Manually curated asymmetric Mannich data descriptor: fixed4015 reaction records; dataset/row audit, ee-to-ddG, reaction conditions, ordered SMARTS classes, scaffolds, t-SNE and heatmaps. Separate SDF audit/regeneration and declared reaction-PCA reconstruction. Preserve axial identity and source discrepancies. No reaction OCR."
+  }
+]

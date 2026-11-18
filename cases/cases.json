@@ -10,9 +10,7 @@
       "4015reactions153DOIs;468catalysts vs462canonical;538/578reagents",
       "Audit preserves4015 rows,20 products have unspecified potential carbon stereo; chemical inventory flags are not automatic errors"
     ],
-    "tool_readiness": "implemented",
-    "acceptance_status": "report_not_completed",
-    "evidence": "artifacts/three-paper-reproduction/e2e/M01_root_scoped_v8"
+    "tool_readiness": "implemented"
   },
   {
     "id": "M02",
