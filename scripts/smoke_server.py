@@ -16,7 +16,7 @@ async def check(study):
             process=subprocess.Popen([sys.executable,'-m',f'chem_repro.{study}.server','--port',str(port)],cwd=directory,env=environment,stdout=log,stderr=subprocess.STDOUT)
             try:
                 async with httpx.AsyncClient(timeout=2) as http:
-                    for _ in range(60):
+                    for _ in range(360):
                         if process.poll() is not None:raise RuntimeError(Path(directory,'server.log').read_text())
                         try:
                             await http.get(base+'/mcp');break

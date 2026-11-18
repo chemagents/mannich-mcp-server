@@ -3,7 +3,7 @@ name = "mannich-mcp-server"
 version = "0.2.1"
 description = "Scientific MCP server for mannich; shared ChemAgents runtime"
 requires-python = ">=3.12,<3.13"
-dependencies = ["chem-repro-suite @ git+https://github.com/chemagents/chem-repro-suite.git@4f35d985cfb0b30ee78247496c4faa63ca56f572"]
+dependencies = ["chem-repro-suite @ git+https://github.com/chemagents/chem-repro-suite.git@67da19228ed187a971d03790579d669ca5b5a16a"]
 
 [project.scripts]
 mannich-mcp-server = "mannich_mcp:main"

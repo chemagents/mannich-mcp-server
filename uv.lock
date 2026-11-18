@@ -338,8 +338,8 @@ wheels = [
 
 [[package]]
 name = "chem-repro-suite"
-version = "0.4.0"
-source = { git = "https://github.com/chemagents/chem-repro-suite.git?rev=4f35d985cfb0b30ee78247496c4faa63ca56f572#4f35d985cfb0b30ee78247496c4faa63ca56f572" }
+version = "0.4.1"
+source = { git = "https://github.com/chemagents/chem-repro-suite.git?rev=67da19228ed187a971d03790579d669ca5b5a16a#67da19228ed187a971d03790579d669ca5b5a16a" }
 dependencies = [
     { name = "boto3" },
     { name = "catboost" },
@@ -925,7 +925,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "chem-repro-suite", git = "https://github.com/chemagents/chem-repro-suite.git?rev=4f35d985cfb0b30ee78247496c4faa63ca56f572" }]
+requires-dist = [{ name = "chem-repro-suite", git = "https://github.com/chemagents/chem-repro-suite.git?rev=67da19228ed187a971d03790579d669ca5b5a16a" }]
 
 [[package]]
 name = "markdown-it-py"
