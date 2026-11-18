@@ -1,0 +1,8 @@
+[
+  {
+    "name": "mannich-2026",
+    "url": "http://127.0.0.1:7343/mcp",
+    "timeout": 7200,
+    "description": "Scientific Data asymmetric organocatalytic Mannich dataset: curated reaction/catalyst identity, axial stereochemistry audit, ee-to-ddG conversion, conditions, SMARTS classes, scaffolds, t-SNE, selectivity heatmaps, representative/scaffold vector structure pages, SDF audit and declared reaction PCA reconstruction. OCR is manual and not implemented. Regenerates all curated catalyst SDFs under the original algorithm and a separately labeled geometry/CIP-checked alternative, preserving failed or conditional cases."
+  }
+]

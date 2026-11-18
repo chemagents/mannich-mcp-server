@@ -1,0 +1,124 @@
+[
+  {
+    "id": "M01",
+    "study": "mannich",
+    "prompt": "Каков состав набора асимметричных органокаталитических реакций Манниха из Scientific Data 2026? Пересчитай реакции, публикации, катализаторы и реагенты, сохранив аксиальную стереохимию и объяснив дедупликацию.",
+    "expected_tools": [
+      "mannich_dataset_overview"
+    ],
+    "scientific_checks": [
+      "4015reactions153DOIs;468catalysts vs462canonical;538/578reagents",
+      "Audit preserves4015 rows,20 products have unspecified potential carbon stereo; chemical inventory flags are not automatic errors"
+    ],
+    "tool_readiness": "implemented",
+    "acceptance_status": "report_not_completed",
+    "evidence": "artifacts/three-paper-reproduction/e2e/M01_root_scoped_v8"
+  },
+  {
+    "id": "M02",
+    "study": "mannich",
+    "prompt": "Зачем авторы набора реакций Манниха преобразовали ee в |ΔΔG‡|? Независимо пересчитай значения по ee и температуре, сравни с сохранённой колонкой, покажи распределения и асимметрию. Объясни предел ee=100% и отличие от dr.",
+    "expected_tools": [
+      "mannich_enantioselectivity_distribution"
+    ],
+    "scientific_checks": [
+      "median ee89.4;skew-1.5478 vs.1022;residual<1e-12",
+      "cap99.9%;magnitude only;figures downloadable"
+    ],
+    "tool_readiness": "implemented"
+  },
+  {
+    "id": "M03",
+    "study": "mannich",
+    "prompt": "Какие температуры, растворители, времена, выходы и загрузки катализатора представлены в наборе Манниха? Воспроизведи распределения и проверь, совпадает ли число растворителей со статьёй; смеси и синонимы обработай явно.",
+    "expected_tools": [
+      "mannich_reaction_conditions"
+    ],
+    "scientific_checks": [
+      "temperature-78..85;yield median83;time median24",
+      "77raw/50notebook categories;do not equate to unique molecular solvent identities",
+      "51 non-mixture case-folded labels excluding neat; not verified unique solvent identities"
+    ],
+    "tool_readiness": "implemented"
+  },
+  {
+    "id": "M04",
+    "study": "mannich",
+    "prompt": "Какие классы катализаторов и реагентов доминируют в наборе Манниха? Пересчитай SMARTS-классификацию, проверь сохранённые метки и покажи самый частый катализатор каждого класса со структурой и частотой.",
+    "expected_tools": [
+      "mannich_component_classification"
+    ],
+    "scientific_checks": [
+      "zero stored catalyst label disagreements",
+      "11 representative structures and frequencies, explicit axial labels; download and inspect Figure5"
+    ],
+    "tool_readiness": "implemented"
+  },
+  {
+    "id": "M05",
+    "study": "mannich",
+    "prompt": "Воспроизведи карты химического пространства катализаторов и реагентов Манниха. Сохрани принадлежность каждой точки исходной структуре; отдельно проверь, как кодируется стереохимия и соответствует ли это тексту статьи.",
+    "expected_tools": [
+      "mannich_chemical_space"
+    ],
+    "scientific_checks": [
+      "both catalysts/reagents calls;468/1106records",
+      "catalyst notebook chiralityFalse;axial R/S not in fingerprint;no global-distance inference"
+    ],
+    "tool_readiness": "implemented"
+  },
+  {
+    "id": "M06",
+    "study": "mannich",
+    "prompt": "Насколько разнообразны каркасы катализаторов, электрофилов и нуклеофилов в наборе Манниха? Воспроизведи дополнение с частотами, отдельно покажи ациклические исключения и расхождения с опубликованными числами.",
+    "expected_tools": [
+      "mannich_scaffold_diversity"
+    ],
+    "scientific_checks": [
+      "207vs204catalysts;114/112reagents;acyclic16/14/104",
+      "207/114/112 scaffold grids exported across12/7/7pages; discrepancy207vs204 remains visible"
+    ],
+    "tool_readiness": "partial"
+  },
+  {
+    "id": "M07",
+    "study": "mannich",
+    "prompt": "Какие сочетания классов катализатора и субстрата дают высокий медианный ee в опубликованных реакциях Манниха? Построй обе тепловые карты с числом наблюдений и сравни правила маскирования статьи и ноутбука. Можно ли по ним выбрать лучший катализатор для нового субстрата?",
+    "expected_tools": [
+      "mannich_selectivity_heatmaps"
+    ],
+    "scientific_checks": [
+      "both paper/notebook calls;min_n5vs4;masked cells null",
+      "observational medians;no causal or prospective best-catalyst claim;download artifacts"
+    ],
+    "tool_readiness": "implemented"
+  },
+  {
+    "id": "M08",
+    "study": "mannich",
+    "prompt": "Проверь трёхмерные структуры всех катализаторов Манниха против табличных SMILES, точечной и аксиальной стереохимии. Раздели ошибку графа, дополнительную неуказанную стереохимию и неподтверждённое абсолютное R/S. Затем воспроизведи генерацию структур без OCR.",
+    "expected_tools": [
+      "mannich_catalyst_structure_audit",
+      "mannich_regenerate_catalyst_structures"
+    ],
+    "scientific_checks": [
+      "468 deposited and468 regenerated structures;zero graph/point-stereo contradictions",
+      "Deposited axial audit:9 supported matches,3 disagreements,39 conditional/ambiguous; source regeneration:8 matches,4 disagreements,38 conditional,1 ambiguous",
+      "Source torsion-sign convention differs from geometry/CIP check; 12 supported alternative conformers verified separately; no silent input repair"
+    ],
+    "tool_readiness": "partial"
+  },
+  {
+    "id": "M09",
+    "study": "mannich",
+    "prompt": "Воспроизведи PCA пространства всех реакций Манниха из дополнения. Сохрани роли реагентов, катализатора и продукта, покажи настройки структурного reaction fingerprint, доли дисперсии и координаты. Не подменяй неизвестные настройки авторов молчаливыми значениями по умолчанию.",
+    "expected_tools": [
+      "mannich_reaction_space"
+    ],
+    "scientific_checks": [
+      "4015records;exact fingerprint settings and source deviations",
+      "Tool implemented with explicit structural defaults; missing original settings prevent exact PCA-coordinate replay"
+    ],
+    "tool_readiness": "partial"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "fresh_environment": true,
+  "source": "public pinned Git dependency",
+  "check": {
+    "study": "mannich",
+    "tool_count": 10,
+    "tool": "mannich_dataset_overview",
+    "status": "success",
+    "verified_downloads": 7,
+    "scope": "Actual HTTP MCP smoke check; not a complete paper or CoScientist E2E acceptance"
+  },
+  "full_coscientist_report_acceptance": "ongoing"
+}
