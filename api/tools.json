@@ -1,10 +1,11 @@
 {
-  "core_commit": "a2d980330bd90275722d401c6c9ca246a536dd01",
+  "core_commit": "4be1e94c912db7a2790c831fb01d098ad290a88a",
   "study": "mannich",
   "tools": [
     {
       "name": "mannich_dataset_overview",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nHow many asymmetric organocatalytic Mannich reactions, source papers, catalysts and substrates\nare in the curated dataset? Recompute identities including R/S axial configurations; audit\nmissingness, units/ranges, dr ratios, duplicate inputs, charge/heavy-atom inventories and unspecified\nproduct carbon stereo. Full row diagnostics are downloadable; no automatic exclusions or OCR.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nHow many asymmetric organocatalytic Mannich reactions, source papers, catalysts and substrates\nare in the curated dataset? Recompute identities including R/S axial configurations; audit\nmissingness, units/ranges, dr ratios, duplicate inputs, charge/heavy-atom inventories and unspecified\nproduct carbon stereo. Full row diagnostics are downloadable; no automatic exclusions or OCR.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_dataset_overview.json; bind that output to this exact tool name (mannich_dataset_overview). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "include_audit": {
@@ -376,9 +377,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_dataset_overview. Suggested direct output name: mannich_dataset_overview.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": false,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -388,11 +392,13 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     },
     {
       "name": "mannich_enantioselectivity_distribution",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhy convert Mannich ee to |ΔΔG‡|? Recompute the Eyring conversion, target distribution and\nskewness; check stored values, temperature units and the 99.9% cap. Never conflate ee with dr.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhy convert Mannich ee to |ΔΔG‡|? Recompute the Eyring conversion, target distribution and\nskewness; check stored values, temperature units and the 99.9% cap. Never conflate ee with dr.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_enantioselectivity_distribution.json; bind that output to this exact tool name (mannich_enantioselectivity_distribution). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "include_figures": {
@@ -764,9 +770,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_enantioselectivity_distribution. Suggested direct output name: mannich_enantioselectivity_distribution.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": false,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -776,11 +785,13 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     },
     {
       "name": "mannich_reaction_conditions",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhat temperatures, solvents, times, yields and catalyst loadings occur in the Mannich data?\nRecompute Figure 3 statistics with declared mixture/solvent normalization and missingness.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhat temperatures, solvents, times, yields and catalyst loadings occur in the Mannich data?\nRecompute Figure 3 statistics with declared mixture/solvent normalization and missingness.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_reaction_conditions.json; bind that output to this exact tool name (mannich_reaction_conditions). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "include_figures": {
@@ -1152,9 +1163,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_reaction_conditions. Suggested direct output name: mannich_reaction_conditions.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": false,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -1164,11 +1178,13 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     },
     {
       "name": "mannich_component_classification",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhich catalyst, nucleophile and imine families dominate asymmetric Mannich reactions?\nRecompute the paper's ordered SMARTS rules; preserve distinct axial catalysts and count both\nunique structures and reaction records. Audit disagreements with deposited catalyst labels.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhich catalyst, nucleophile and imine families dominate asymmetric Mannich reactions?\nRecompute the paper's ordered SMARTS rules; preserve distinct axial catalysts and count both\nunique structures and reaction records. Audit disagreements with deposited catalyst labels.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_component_classification.json; bind that output to this exact tool name (mannich_component_classification). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "include_figures": {
@@ -1540,9 +1556,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_component_classification. Suggested direct output name: mannich_component_classification.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": false,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -1552,11 +1571,13 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     },
     {
       "name": "mannich_scaffold_diversity",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nHow many Murcko scaffolds are represented by Mannich catalysts and substrates?\nRecompute the three supplementary scaffold populations; distinguish acyclic exclusions,\nreaction frequency and unique chemical identities. Axial identity is preserved before grouping.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nHow many Murcko scaffolds are represented by Mannich catalysts and substrates?\nRecompute the three supplementary scaffold populations; distinguish acyclic exclusions,\nreaction frequency and unique chemical identities. Axial identity is preserved before grouping.\nThe 207 versus 204 catalyst discrepancy remains explicit; stored same-data checks across the\npaper and repository RDKit versions are returned separately from this call's computations.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_scaffold_diversity.json; bind that output to this exact tool name (mannich_scaffold_diversity). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "include_figures": {
@@ -1928,9 +1949,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_scaffold_diversity. Suggested direct output name: mannich_scaffold_diversity.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": false,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -1940,18 +1964,21 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     },
     {
       "name": "mannich_selectivity_heatmaps",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhich Mannich catalyst–substrate classes have high median ee and adequate observation counts?\nRecompute both Figure 7 tables. Paper masks n<5; notebook uses n<4. These are descriptive\nliterature medians, not causal catalyst recommendations or prospective validation.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhich Mannich catalyst–substrate classes have high median ee and adequate observation counts?\nRecompute both Figure 7 tables. Paper masks n<5; notebook uses n<4. These are descriptive\nliterature medians, not causal catalyst recommendations or prospective validation.\nUse protocol=\"both\" to compare paper and notebook masking in ONE call with ONE complete\nstructured output. Both variants and their full tables/figures are labeled separately.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_selectivity_heatmaps.json; bind that output to this exact tool name (mannich_selectivity_heatmaps). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "protocol": {
             "default": "paper",
             "enum": [
               "paper",
-              "notebook"
+              "notebook",
+              "both"
             ],
             "type": "string"
           },
@@ -2324,9 +2351,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_selectivity_heatmaps. Suggested direct output name: mannich_selectivity_heatmaps.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": false,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -2336,18 +2366,21 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     },
     {
       "name": "mannich_chemical_space",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nHow are the 468 Mannich catalysts and substrate pools distributed in chemical space?\nRecompute Figures 4/6 Morgan t-SNE coordinates, source identities and class labels.\nNotebook catalyst fingerprints omit chirality despite the paper wording; a separately labeled\npoint-chirality sensitivity mode is available. Axial R/S is not encoded in Morgan bits.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nHow are the 468 Mannich catalysts and substrate pools distributed in chemical space?\nRecompute Figures 4/6 Morgan t-SNE coordinates, source identities and class labels.\nNotebook catalyst fingerprints omit chirality despite the paper wording; a separately labeled\npoint-chirality sensitivity mode is available. Axial R/S is not encoded in Morgan bits.\nFor all catalyst/reagent maps plus the stereo check, use population=\"both\", protocol=\"compare\":\nONE call returns ONE complete structured result with three separately labeled variants.\nThis tool covers molecular maps; reaction PCA is a separate question, not required for these maps.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_chemical_space.json; bind that output to this exact tool name (mannich_chemical_space). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "population": {
             "default": "catalysts",
             "enum": [
               "catalysts",
-              "reagents"
+              "reagents",
+              "both"
             ],
             "type": "string"
           },
@@ -2355,7 +2388,8 @@
             "default": "notebook",
             "enum": [
               "notebook",
-              "chirality_sensitivity"
+              "chirality_sensitivity",
+              "compare"
             ],
             "type": "string"
           },
@@ -2728,9 +2762,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_chemical_space. Suggested direct output name: mannich_chemical_space.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": false,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -2740,11 +2777,13 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     },
     {
       "name": "mannich_catalyst_structure_audit",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nAre the Mannich catalyst SDF files consistent with the curated SMILES and axial R/S annotations?\nAudit all actual SDF records, explicit point stereochemistry, finite 3-D geometry and axial CIP\nevidence. Exclude macOS archive metadata; do not confuse an R/S text property with verified geometry.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nAre the Mannich catalyst SDF files consistent with the curated SMILES and axial R/S annotations?\nAudit all actual SDF records, explicit point stereochemistry, finite 3-D geometry and axial CIP\nevidence. Exclude macOS archive metadata; do not confuse an R/S text property with verified geometry.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_catalyst_structure_audit.json; bind that output to this exact tool name (mannich_catalyst_structure_audit). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {},
         "type": "object",
@@ -3111,9 +3150,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_catalyst_structure_audit. Suggested direct output name: mannich_catalyst_structure_audit.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": true,
         "destructiveHint": false,
         "idempotentHint": true,
@@ -3123,11 +3165,13 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     },
     {
       "name": "mannich_reaction_space",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nReconstruct the supplementary Mannich reaction PCA for all curated records. Roles are\nreactants=nucleophile+electrophile, agent=catalyst, product=product. Export coordinates,\nstructural fingerprint bits and PCA loadings. The supplement omits exact fingerprint/PCA\nsettings; this declared reconstruction is not asserted to reproduce its unknown coordinates.\nNo OCR, atom mapping or target-informed feature construction is performed.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nReconstruct the supplementary Mannich reaction PCA for all curated records. Roles are\nreactants=nucleophile+electrophile, agent=catalyst, product=product. Export coordinates,\nstructural fingerprint bits and PCA loadings. The supplement omits exact fingerprint/PCA\nsettings; this declared reconstruction is not asserted to reproduce its unknown coordinates.\nNo OCR, atom mapping or target-informed feature construction is performed.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_reaction_space.json; bind that output to this exact tool name (mannich_reaction_space). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "include_agents": {
@@ -3503,9 +3547,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_reaction_space. Suggested direct output name: mannich_reaction_space.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": false,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -3515,11 +3562,13 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     },
     {
       "name": "mannich_regenerate_catalyst_structures",
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nRegenerate Mannich catalyst SDFs from the curated SMILES and axial labels with the pinned\nsource ETKDGv3/MMFF94 algorithm (five conformers,20 bridged seeds,seed42). Return per-record\nfailures, point/axial checks, aligned RMSD to deposited structures and a downloadable SDF archive.\ngeometry_verified is a separate corrected protocol using nominated-axis CIP constraints; it never\nmasquerades as source replay. Default covers all468; filenames optionally selects exact source names.",
+      "title": null,
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nRegenerate Mannich catalyst SDFs from the curated SMILES and axial labels with the pinned\nsource ETKDGv3/MMFF94 algorithm (five conformers,20 bridged seeds,seed42). Return per-record\nfailures, point/axial checks, aligned RMSD to deposited structures and a downloadable SDF archive.\ngeometry_verified is a separate corrected protocol using nominated-axis CIP constraints; it never\nmasquerades as source replay. Default covers all468; filenames optionally selects exact source names.\nAn identical completed call in this server process is reused with explicit cache provenance and\nartifact hash checks. Read its original full result instead of repeating a long call to retrieve it.\nforce_recompute=true explicitly requests a fresh generation with the same scientific parameters.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_regenerate_catalyst_structures.json; bind that output to this exact tool name (mannich_regenerate_catalyst_structures). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "protocol": {
@@ -3543,6 +3592,10 @@
               }
             ],
             "default": null
+          },
+          "force_recompute": {
+            "default": false,
+            "type": "boolean"
           }
         },
         "type": "object",
@@ -3909,9 +3962,12 @@
           "answer",
           "metadata"
         ],
-        "type": "object"
+        "type": "object",
+        "description": "Complete scientific result of mannich_regenerate_catalyst_structures. Suggested direct output name: mannich_regenerate_catalyst_structures.json. Preserve the returned answer, metadata and artifact inventory as one object."
       },
+      "icons": null,
       "annotations": {
+        "title": null,
         "readOnlyHint": false,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -3921,7 +3977,8 @@
         "_fastmcp": {
           "tags": []
         }
-      }
+      },
+      "execution": null
     }
   ]
 }
