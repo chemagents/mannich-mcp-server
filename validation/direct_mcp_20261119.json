@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-19",
+  "kind": "direct MCP validation; not CoScientist end-to-end",
+  "core_commit": "cf4509ce4da0be3fdc485306031393bb8a4842c5",
+  "main_run_core_commit": "d62ffb4e797cf72c25cb898165eb115ce3bd646c",
+  "calls": [
+    {
+      "tool": "mannich_dataset_overview",
+      "arguments": {},
+      "status": "success",
+      "elapsed_seconds": 5.258,
+      "verified_artifacts": 7,
+      "response_sha256": "12c3a5b3a54c0f95a85f0a7155e3e877e30289d9b2ac0282d88297fe1c04fbda"
+    },
+    {
+      "tool": "mannich_enantioselectivity_distribution",
+      "arguments": {},
+      "status": "success",
+      "elapsed_seconds": 1.228,
+      "verified_artifacts": 6,
+      "response_sha256": "34b0bc9c2eb64a6277d1d0cb18de4bf5d333a0d3665811ccff8c2d6c71ad0c13"
+    },
+    {
+      "tool": "mannich_reaction_conditions",
+      "arguments": {},
+      "status": "success",
+      "elapsed_seconds": 0.403,
+      "verified_artifacts": 6,
+      "response_sha256": "b0dcbc3ec0d9cc9b38321815ad126b75dc6976d401157a8f02e170b7327c3464"
+    },
+    {
+      "tool": "mannich_component_classification",
+      "arguments": {},
+      "status": "success",
+      "elapsed_seconds": 0.932,
+      "verified_artifacts": 9,
+      "response_sha256": "5a2297c44c19be9375ee045b2ae4ec277e28d2bda6146e7e50296d1aa241af4b"
+    },
+    {
+      "tool": "mannich_scaffold_diversity",
+      "arguments": {},
+      "status": "partial",
+      "elapsed_seconds": 10.839,
+      "verified_artifacts": 17,
+      "response_sha256": "dc4febf19379e1a2a51cc3e7538e3a6e8d8a486fbe73b14cae81aa0622a1b1c5"
+    },
+    {
+      "tool": "mannich_selectivity_heatmaps",
+      "arguments": {
+        "protocol": "both"
+      },
+      "status": "success",
+      "elapsed_seconds": 1.757,
+      "verified_artifacts": 19,
+      "response_sha256": "3a6481463fe8e9c412e27cf2a096f400016ae3e3e8d92a13824f618756eca86c"
+    },
+    {
+      "tool": "mannich_chemical_space",
+      "arguments": {
+        "population": "both",
+        "protocol": "compare"
+      },
+      "status": "success",
+      "elapsed_seconds": 6.198,
+      "verified_artifacts": 19,
+      "response_sha256": "ecd637f249d9e7eff885e44fc7169026be04a8a313b8ec5da0f27e46cb9a98ef"
+    },
+    {
+      "tool": "mannich_catalyst_structure_audit",
+      "arguments": {},
+      "status": "success",
+      "elapsed_seconds": 3.039,
+      "verified_artifacts": 2,
+      "response_sha256": "af423f7dd5276143479277dedeef1145f4d31852e7a6e14f53609b4c3e3c962d"
+    },
+    {
+      "tool": "mannich_reaction_space",
+      "arguments": {},
+      "status": "partial",
+      "elapsed_seconds": 8.076,
+      "verified_artifacts": 6,
+      "response_sha256": "c5d240e6c23413681c192ee5edf4e154e4ec6f605edb971387bb7fe1b8ab6ac9"
+    }
+  ],
+  "independent_checks": {
+    "calls": 9,
+    "downloaded_artifacts_verified": 91,
+    "eyring_rows_verified": 4015,
+    "scaffold_memberships_verified": 1584,
+    "unresolved_catalyst_scaffolds": {
+      "computed": 207,
+      "paper": 204
+    }
+  }
+}

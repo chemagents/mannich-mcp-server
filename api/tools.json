@@ -1,5 +1,5 @@
 {
-  "core_commit": "4be1e94c912db7a2790c831fb01d098ad290a88a",
+  "core_commit": "cf4509ce4da0be3fdc485306031393bb8a4842c5",
   "study": "mannich",
   "tools": [
     {
@@ -398,7 +398,7 @@
     {
       "name": "mannich_enantioselectivity_distribution",
       "title": null,
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhy convert Mannich ee to |ΔΔG‡|? Recompute the Eyring conversion, target distribution and\nskewness; check stored values, temperature units and the 99.9% cap. Never conflate ee with dr.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_enantioselectivity_distribution.json; bind that output to this exact tool name (mannich_enantioselectivity_distribution). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhy convert Mannich ee to |\u0394\u0394G\u2021|? Recompute the Eyring conversion, target distribution and\nskewness; check stored values, temperature units and the 99.9% cap. Never conflate ee with dr.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_enantioselectivity_distribution.json; bind that output to this exact tool name (mannich_enantioselectivity_distribution). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "include_figures": {
@@ -1970,7 +1970,7 @@
     {
       "name": "mannich_selectivity_heatmaps",
       "title": null,
-      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhich Mannich catalyst–substrate classes have high median ee and adequate observation counts?\nRecompute both Figure 7 tables. Paper masks n<5; notebook uses n<4. These are descriptive\nliterature medians, not causal catalyst recommendations or prospective validation.\nUse protocol=\"both\" to compare paper and notebook masking in ONE call with ONE complete\nstructured output. Both variants and their full tables/figures are labeled separately.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_selectivity_heatmaps.json; bind that output to this exact tool name (mannich_selectivity_heatmaps). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
+      "description": "Study: Mannich2026; paper DOI: 10.1038/s41597-026-08287-9; dataset: mannich_2026.\nWhich Mannich catalyst\u2013substrate classes have high median ee and adequate observation counts?\nRecompute both Figure 7 tables. Paper masks n<5; notebook uses n<4. These are descriptive\nliterature medians, not causal catalyst recommendations or prospective validation.\nUse protocol=\"both\" to compare paper and notebook masking in ONE call with ONE complete\nstructured output. Both variants and their full tables/figures are labeled separately.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: mannich_selectivity_heatmaps.json; bind that output to this exact tool name (mannich_selectivity_heatmaps). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "protocol": {
